@@ -216,6 +216,95 @@
       border-radius: 3px;
       margin: 0 0.1em;
     }
+
+    /* Content slides — left-aligned layout */
+    .slide-inner--left {
+      align-items: stretch;
+      text-align: left;
+      padding: 1.75rem 2.5rem;
+    }
+
+    .slide-accent-title {
+      font-size: 1.65rem;
+      font-weight: 600;
+      color: #F5F5F5;
+      line-height: 1.3;
+      margin: 0 0 1.5rem;
+      padding-left: 1rem;
+      border-left: 3px solid #6B46F6;
+      align-self: flex-start;
+    }
+
+    .tier-cards {
+      display: flex;
+      gap: 20px;
+      align-items: stretch;
+      width: 100%;
+    }
+
+    .tier-card {
+      flex: 1;
+      min-width: 0;
+      background: #141414;
+      border: 1px solid #262626;
+      border-radius: 8px;
+      padding: 24px;
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      text-align: left;
+    }
+
+    .tier-label {
+      font-size: 0.6rem;
+      font-weight: 600;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: #A1A1AA;
+      margin-bottom: 0.65rem;
+    }
+
+    .tier-card-title {
+      font-size: 0.95rem;
+      font-weight: 600;
+      line-height: 1.35;
+      margin: 0 0 0.85rem;
+    }
+
+    .tier-card--1 .tier-card-title {
+      color: #A1A1AA;
+    }
+
+    .tier-card--2 .tier-card-title {
+      color: #A78BFA;
+    }
+
+    .tier-card--3 {
+      background: linear-gradient(to bottom, #141414 70%, rgba(107, 70, 246, 0.12) 100%);
+    }
+
+    .tier-card--3 .tier-card-title {
+      color: #6B46F6;
+      text-shadow: 0 0 24px rgba(107, 70, 246, 0.45);
+    }
+
+    .tier-list {
+      margin: 0;
+      padding-left: 1.1rem;
+      font-size: 0.68rem;
+      font-weight: 400;
+      color: #F5F5F5;
+      line-height: 1.6;
+    }
+
+    .tier-list li {
+      margin-bottom: 0.3rem;
+    }
+
+    .tier-list li:last-child {
+      margin-bottom: 0;
+    }
   </style>
 </head>
 <body>
@@ -255,6 +344,43 @@
               <h1 class="section-title">A Credibility Engine</h1>
             </div>
             <hr class="section-rule">
+          </div>
+        </section>
+        <section>
+          <div class="slide-inner slide-inner--left">
+            <h2 class="slide-accent-title">Creating a Peer Advisory Paradigm</h2>
+            <div class="tier-cards">
+              <div class="tier-card tier-card--1">
+                <span class="tier-label">Tier 01</span>
+                <h3 class="tier-card-title">Baseline Traits</h3>
+                <ul class="tier-list">
+                  <li>Drive</li>
+                  <li>Intellectual curiosity</li>
+                  <li>Coachability</li>
+                  <li>Experience</li>
+                </ul>
+              </div>
+              <div class="tier-card tier-card--2">
+                <span class="tier-label">Tier 02</span>
+                <h3 class="tier-card-title">Table-Stakes for FE at Cursor</h3>
+                <ul class="tier-list">
+                  <li>Has been a professional engineer</li>
+                  <li>Has sold to engineering buyers or comparable technical personas</li>
+                  <li>Familiarity with adjacent products and the AI coding category</li>
+                  <li>Strong executive and developer presence</li>
+                </ul>
+              </div>
+              <div class="tier-card tier-card--3">
+                <span class="tier-label">Tier 03</span>
+                <h3 class="tier-card-title">Exceptional FE at Cursor</h3>
+                <ul class="tier-list">
+                  <li>Recognized influence in the developer or AI tooling space</li>
+                  <li>Active evangelist — speaks, writes, or builds publicly</li>
+                  <li>Sought out by the community, not just known within it</li>
+                  <li>Has led technical organizations</li>
+                </ul>
+              </div>
+            </div>
           </div>
         </section>
       </section>
