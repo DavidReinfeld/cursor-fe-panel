@@ -35,12 +35,14 @@
       text-align: center;
     }
 
-    .reveal .slides section {
-      height: 100%;
-      display: flex !important;
+    /* Flex layout on inner wrapper — never override reveal.js section display */
+    .slide-inner {
+      display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
+      width: 100%;
+      height: 100%;
       padding: 2rem 3rem;
       box-sizing: border-box;
     }
@@ -53,6 +55,20 @@
       text-transform: uppercase;
       color: var(--cursor-muted);
       margin-bottom: 1.5rem;
+    }
+
+    p.section-label:has(em) {
+      font-size: 1.05rem;
+      font-weight: 400;
+      letter-spacing: 0.01em;
+      text-transform: none;
+      color: #A1A1AA;
+      margin-bottom: 0.75rem;
+    }
+
+    p.section-label em {
+      font-style: italic;
+      color: #A1A1AA;
     }
 
     /* Title glow wrapper */
@@ -208,66 +224,89 @@
 
       <!-- 0. Title slide -->
       <section class="title-slide">
-        <div class="title-glow">
-          <h1 class="main-title">Building a World-Class Field Engineering Team</h1>
+        <div class="slide-inner">
+          <div class="title-glow">
+            <h1 class="main-title">Building a World-Class Field Engineering Team</h1>
+          </div>
+          <p class="subtitle">Regional Director, Field Engineering</p>
+          <hr class="section-rule">
+          <p class="meta">
+            <span class="name">David Reinfeld</span><br>
+            June 8, 2026
+          </p>
         </div>
-        <p class="subtitle">Regional Director, Field Engineering</p>
-        <hr class="section-rule">
-        <p class="meta">
-          <span class="name">David Reinfeld</span><br>
-          June 8, 2026
-        </p>
       </section>
 
       <!-- 1. Part 1 -->
       <section>
-        <span class="section-label">SECTION 01</span>
-        <div class="title-glow">
-          <h2 class="section-title">Part 1: Recruiting, Assessing &amp; Retaining World-Class Field Engineers</h2>
-        </div>
-        <hr class="section-rule">
+        <section>
+          <div class="slide-inner">
+            <span class="section-label">SECTION 01</span>
+            <div class="title-glow">
+              <h2 class="section-title">Part 1: Recruiting, Assessing &amp; Retaining World-Class Field Engineers</h2>
+            </div>
+            <hr class="section-rule">
+          </div>
+        </section>
+        <section>
+          <div class="slide-inner">
+            <p class="section-label"><em>What we're actually building...</em></p>
+            <div class="title-glow">
+              <h1 class="section-title">The Credibility Engine</h1>
+            </div>
+            <hr class="section-rule">
+          </div>
+        </section>
       </section>
 
       <!-- 2. Part 2 -->
       <section>
-        <span class="section-label">SECTION 02</span>
-        <div class="title-glow">
-          <h2 class="section-title">Part 2: Building a Culture of Excellence</h2>
+        <div class="slide-inner">
+          <span class="section-label">SECTION 02</span>
+          <div class="title-glow">
+            <h2 class="section-title">Part 2: Building a Culture of Excellence</h2>
+          </div>
+          <hr class="section-rule">
         </div>
-        <hr class="section-rule">
       </section>
 
       <!-- 3. Part 3 -->
       <section>
-        <span class="section-label">SECTION 03</span>
-        <div class="title-glow">
-          <h2 class="section-title">Part 3: 10 · 20 · 30 Day Impact Plan</h2>
+        <div class="slide-inner">
+          <span class="section-label">SECTION 03</span>
+          <div class="title-glow">
+            <h2 class="section-title">Part 3: 10 · 20 · 30 Day Impact Plan</h2>
+          </div>
+          <hr class="section-rule">
         </div>
-        <hr class="section-rule">
       </section>
 
       <!-- 4. Part 4 -->
       <section>
-        <span class="section-label">SECTION 04</span>
-        <div class="title-glow">
-          <h2 class="section-title">Part 4: Metrics &amp; Measuring Impact</h2>
+        <div class="slide-inner">
+          <span class="section-label">SECTION 04</span>
+          <div class="title-glow">
+            <h2 class="section-title">Part 4: Metrics &amp; Measuring Impact</h2>
+          </div>
+          <hr class="section-rule">
         </div>
-        <hr class="section-rule">
       </section>
 
       <!-- 5. Close slide -->
       <section class="close-slide">
-        <div class="title-glow">
-          <h2 class="section-title">Let's Build Something Exceptional</h2>
+        <div class="slide-inner">
+          <div class="title-glow">
+            <h2 class="section-title">Let's Build Something Exceptional</h2>
+          </div>
+          <hr class="section-rule">
         </div>
-        <hr class="section-rule">
       </section>
 
     </div>
   </div>
 
   <div class="keyboard-hint">
-    <kbd>→</kbd> next section &nbsp;&nbsp; <kbd>ESC</kbd> overview
+    <kbd>→</kbd> next &nbsp;&nbsp; <kbd>↓</kbd> sub-slide &nbsp;&nbsp; <kbd>ESC</kbd> overview
   </div>
 
   <script src="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/reveal.js"></script>
@@ -277,6 +316,7 @@
       progress: true,
       controls: true,
       slideNumber: 'c/t',
+      navigationMode: 'default',
       transition: 'slide',
       transitionSpeed: 'default',
       backgroundTransition: 'fade',
