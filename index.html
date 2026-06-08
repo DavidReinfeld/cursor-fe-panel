@@ -266,7 +266,7 @@
     }
 
     .tier-card-title {
-      font-size: 0.8rem !important;
+      font-size: 1.05rem !important;
       font-weight: 600 !important;
       line-height: 1.35 !important;
       margin: 0 0 0.85rem !important;
@@ -310,6 +310,133 @@
     .tier-list li:last-child {
       margin-bottom: 0;
     }
+
+    /* Profile slides */
+    .profile-layout {
+      display: flex;
+      gap: 2.5rem;
+      align-items: center;
+      width: 100%;
+    }
+
+    .profile-col--content {
+      flex: 1;
+      min-width: 0;
+    }
+
+    .profile-col--photo {
+      flex-shrink: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 200px;
+    }
+
+    .profile-label {
+      font-size: 0.6rem;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: #A1A1AA;
+      margin: 0 0 1rem;
+      padding-left: 1rem;
+      border-left: 3px solid #6B46F6;
+    }
+
+    .profile-name {
+      font-size: 1.75rem !important;
+      font-weight: 600 !important;
+      color: #F5F5F5 !important;
+      line-height: 1.2 !important;
+      margin: 0 0 0.4rem !important;
+      text-transform: none !important;
+      letter-spacing: -0.02em !important;
+    }
+
+    .profile-title {
+      font-size: 1rem !important;
+      font-weight: 400 !important;
+      color: #A78BFA !important;
+      line-height: 1.4 !important;
+      margin: 0 0 1.25rem !important;
+    }
+
+    .profile-list {
+      margin: 0;
+      padding-left: 1.1rem;
+    }
+
+    .profile-list li {
+      font-size: 0.875rem !important;
+      font-weight: 400 !important;
+      color: #F5F5F5 !important;
+      line-height: 1.6 !important;
+      margin-bottom: 0.35rem;
+    }
+
+    .profile-list li:last-child {
+      margin-bottom: 0;
+    }
+
+    .profile-link {
+      font-size: 0.75rem;
+      font-weight: 400;
+      color: #A1A1AA;
+      margin: 1.25rem 0 0;
+    }
+
+    .profile-photo {
+      width: 160px;
+      height: 160px;
+      border-radius: 50%;
+      border: 2px solid #6B46F6;
+      box-shadow: 0 0 16px rgba(107, 70, 246, 0.4);
+      object-fit: cover;
+      display: block;
+    }
+
+    /* Culture quote slide */
+    .slide-inner--quote {
+      position: relative;
+      justify-content: center;
+      gap: 2.5rem;
+      padding: 2rem 3rem;
+    }
+
+    .culture-quote-zone {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      width: 100%;
+    }
+
+    .culture-quote-text {
+      font-size: 2.4rem !important;
+      font-weight: 700 !important;
+      color: #F5F5F5 !important;
+      line-height: 1.25 !important;
+      letter-spacing: -0.02em !important;
+      margin: 0 !important;
+      font-style: normal !important;
+    }
+
+    .culture-quote-attribution {
+      font-size: 0.65rem;
+      font-weight: 400;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: #A1A1AA;
+      margin: 1.25rem 0 0;
+    }
+
+    .culture-quote-rule {
+      width: 40%;
+      height: 1px;
+      background: #262626;
+      border: none;
+      margin: 1.25rem auto 0;
+    }
   </style>
 </head>
 <body>
@@ -337,7 +464,7 @@
           <div class="slide-inner">
             <span class="section-label">SECTION 01</span>
             <div class="title-glow">
-              <h2 class="section-title">Part 1: Recruiting, Assessing &amp; Retaining World-Class Field Engineers</h2>
+              <h2 class="section-title">Recruiting, Assessing &amp; Retaining World-Class Field Engineers</h2>
             </div>
             <hr class="section-rule">
           </div>
@@ -357,7 +484,7 @@
             <div class="tier-cards">
               <div class="tier-card tier-card--1">
                 <span class="tier-label">Tier 01</span>
-                <h3 class="tier-card-title">Baseline Traits</h3>
+                <h3 class="tier-card-title">Baseline</h3>
                 <ul class="tier-list">
                   <li>Drive</li>
                   <li>Intellectual curiosity</li>
@@ -367,7 +494,7 @@
               </div>
               <div class="tier-card tier-card--2">
                 <span class="tier-label">Tier 02</span>
-                <h3 class="tier-card-title">Table-Stakes for FE at Cursor</h3>
+                <h3 class="tier-card-title">Table-Stakes</h3>
                 <ul class="tier-list">
                   <li>Has been a professional engineer</li>
                   <li>Has sold to engineering buyers or comparable technical personas</li>
@@ -377,7 +504,7 @@
               </div>
               <div class="tier-card tier-card--3">
                 <span class="tier-label">Tier 03</span>
-                <h3 class="tier-card-title">Exceptional FE at Cursor</h3>
+                <h3 class="tier-card-title">Exceptional</h3>
                 <ul class="tier-list">
                   <li>Recognized influence in the developer or AI tooling space</li>
                   <li>Active evangelist — speaks, writes, or builds publicly</li>
@@ -388,17 +515,107 @@
             </div>
           </div>
         </section>
+        <section>
+          <div class="slide-inner slide-inner--left">
+            <div class="profile-layout">
+              <div class="profile-col profile-col--content">
+                <p class="profile-label">Profile 01 — The Credibility Engine Candidate</p>
+                <h2 class="profile-name">Colin Dembovsky</h2>
+                <p class="profile-title">Director of Field Services, GitHub Copilot, GitHub</p>
+                <ul class="profile-list">
+                  <li>Developer first — 20+ years of practitioner foundation before ever stepping into a field role</li>
+                  <li>Currently owns the Field Services motion for GitHub Copilot — the most directly comparable role in market</li>
+                  <li>Conference speaker, active blogger with thoughtful personal takes, ships personal projects for fun</li>
+                  <li>Still pursuing certifications and extra-career pursuits</li>
+                </ul>
+                <p class="profile-link">linkedin.com/in/colindembovsky</p>
+              </div>
+              <div class="profile-col profile-col--photo">
+                <img
+                  class="profile-photo"
+                  src="https://media.licdn.com/dms/image/v2/D5603AQH-lawdDCEEBQ/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1721758379540?e=1782345600&amp;v=beta&amp;t=bypBRpHclT0FTOVGqXl88n0N7FwdvTL4Cx_Mz_wZYQU"
+                  alt="Colin Dembovsky"
+                >
+              </div>
+            </div>
+          </div>
+        </section>
+        <section>
+          <div class="slide-inner slide-inner--left">
+            <div class="profile-layout">
+              <div class="profile-col profile-col--content">
+                <p class="profile-label">Profile 02 — A very close 2nd</p>
+                <h2 class="profile-name">Glenn Wester</h2>
+                <p class="profile-title">Principal Solutions Engineer, GitHub</p>
+                <ul class="profile-list">
+                  <li>Engineer first, seller second</li>
+                  <li>7-year tenure at the world's most influential developer platform, 7 years prior in dev tooling</li>
+                  <li>Former DevRel</li>
+                  <li>Posts original thoughts and leads public webinars</li>
+                  <li>Stellar recommendation on entrepreneurial intuition and drive</li>
+                  <li>Intellectual pursuits outside of work — observatory volunteer</li>
+                </ul>
+                <p class="profile-link">linkedin.com/in/glennwester</p>
+              </div>
+              <div class="profile-col profile-col--photo">
+                <img
+                  class="profile-photo"
+                  src="https://media.licdn.com/dms/image/v2/D5603AQGLgbmq-UTKfQ/profile-displayphoto-scale_200_200/B56ZiF35lDHQAY-/0/1754592680682?e=1782345600&amp;v=beta&amp;t=KPmWSIzi3LEcZeLlTDsm5_gD4haD4VqKpYUXD7f-ewk"
+                  alt="Glenn Wester"
+                >
+              </div>
+            </div>
+          </div>
+        </section>
+        <section>
+          <div class="slide-inner slide-inner--left">
+            <div class="profile-layout">
+              <div class="profile-col profile-col--content">
+                <p class="profile-label">Profile 03</p>
+                <h2 class="profile-name">Cassie Espinosa</h2>
+                <p class="profile-title">Senior Large Enterprise Sales Engineer, Harness</p>
+                <ul class="profile-list">
+                  <li>Engineer first — 4.5 years building real DevOps infrastructure</li>
+                  <li>Switched to sell developer velocity and AI CI/CD tooling at Harness</li>
+                  <li>Consistent upward mobility and Presidents Club two consecutive years</li>
+                  <li>Horizontal experience across an array of large enterprise verticals</li>
+                </ul>
+                <p class="profile-link">linkedin.com/in/cassieespinosa</p>
+              </div>
+              <div class="profile-col profile-col--photo">
+                <img
+                  class="profile-photo"
+                  src="https://media.licdn.com/dms/image/v2/D5603AQGHuoUmGe7f0g/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1715458049496?e=1782345600&amp;v=beta&amp;t=Ky-SQKx5Ig-hfZ-83CTJf8TYEQOKzuE65KAseW0F4R8"
+                  alt="Cassie Espinosa"
+                >
+              </div>
+            </div>
+          </div>
+        </section>
       </section>
 
       <!-- 2. Part 2 -->
       <section>
-        <div class="slide-inner">
-          <span class="section-label">SECTION 02</span>
-          <div class="title-glow">
-            <h2 class="section-title">Part 2: Building a Culture of Excellence</h2>
+        <section>
+          <div class="slide-inner">
+            <span class="section-label">SECTION 02</span>
+            <div class="title-glow">
+              <h2 class="section-title">Building a Culture of Excellence</h2>
+            </div>
+            <hr class="section-rule">
           </div>
-          <hr class="section-rule">
-        </div>
+        </section>
+        <section>
+          <div class="slide-inner slide-inner--quote">
+            <div class="culture-quote-zone">
+              <div class="title-glow">
+                <p class="culture-quote-text">&ldquo;The score takes care of itself.&rdquo;</p>
+              </div>
+              <p class="culture-quote-attribution">&mdash; Bill Walsh, Head Coach, San Francisco 49ers</p>
+              <hr class="culture-quote-rule">
+            </div>
+          </div>
+        </section>
       </section>
 
       <!-- 3. Part 3 -->
@@ -406,7 +623,7 @@
         <div class="slide-inner">
           <span class="section-label">SECTION 03</span>
           <div class="title-glow">
-            <h2 class="section-title">Part 3: 10 · 20 · 30 Day Impact Plan</h2>
+            <h2 class="section-title">10 · 20 · 30 Day Impact Plan</h2>
           </div>
           <hr class="section-rule">
         </div>
@@ -417,7 +634,7 @@
         <div class="slide-inner">
           <span class="section-label">SECTION 04</span>
           <div class="title-glow">
-            <h2 class="section-title">Part 4: Metrics &amp; Measuring Impact</h2>
+            <h2 class="section-title">Metrics &amp; Measuring Impact</h2>
           </div>
           <hr class="section-rule">
         </div>
