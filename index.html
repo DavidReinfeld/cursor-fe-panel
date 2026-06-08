@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Building a World-Class Field Engineering Team</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/reveal.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/theme/black.css">
+
+  <style>
+    :root {
+      --cursor-bg: #0A0A0A;
+      --cursor-purple: #6B46F6;
+      --cursor-purple-light: #A78BFA;
+      --cursor-text: #F5F5F5;
+      --cursor-muted: #737373;
+      --cursor-rule: #262626;
+    }
+
+    .reveal-viewport {
+      background: var(--cursor-bg);
+    }
+
+    .reveal {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      color: var(--cursor-text);
+    }
+
+    .reveal .slides {
+      text-align: center;
+    }
+
+    .reveal .slides section {
+      height: 100%;
+      display: flex !important;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem 3rem;
+      box-sizing: border-box;
+    }
+
+    /* Section label */
+    .section-label {
+      font-size: 0.65rem;
+      font-weight: 600;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--cursor-muted);
+      margin-bottom: 1.5rem;
+    }
+
+    /* Title glow wrapper */
+    .title-glow {
+      position: relative;
+      display: inline-block;
+      max-width: 90%;
+    }
+
+    .title-glow::before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 120%;
+      height: 160%;
+      background: radial-gradient(
+        ellipse at center,
+        rgba(107, 70, 246, 0.25) 0%,
+        rgba(167, 139, 250, 0.08) 40%,
+        transparent 70%
+      );
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    .title-glow > * {
+      position: relative;
+      z-index: 1;
+    }
+
+    /* Section headline */
+    .section-title {
+      font-size: 2.4rem;
+      font-weight: 700;
+      line-height: 1.25;
+      color: var(--cursor-text);
+      margin: 0;
+      letter-spacing: -0.02em;
+    }
+
+    .section-rule {
+      width: 4rem;
+      height: 1px;
+      background: var(--cursor-rule);
+      margin: 2rem auto 0;
+      border: none;
+    }
+
+    /* Title slide */
+    .title-slide .main-title {
+      font-size: 2.8rem;
+      font-weight: 700;
+      line-height: 1.2;
+      letter-spacing: -0.03em;
+      margin: 0 0 1.25rem;
+    }
+
+    .title-slide .subtitle {
+      font-size: 1.15rem;
+      font-weight: 500;
+      color: var(--cursor-purple-light);
+      margin: 0 0 2.5rem;
+      letter-spacing: 0.01em;
+    }
+
+    .title-slide .meta {
+      font-size: 0.9rem;
+      font-weight: 400;
+      color: var(--cursor-muted);
+      line-height: 1.6;
+      margin: 0;
+    }
+
+    .title-slide .meta .name {
+      color: var(--cursor-text);
+      font-weight: 500;
+    }
+
+    /* Close slide */
+    .close-slide .section-title {
+      font-size: 2.6rem;
+      background: linear-gradient(135deg, var(--cursor-text) 0%, var(--cursor-purple-light) 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    /* Reveal.js overrides */
+    .reveal .progress {
+      background: var(--cursor-rule);
+      height: 3px;
+    }
+
+    .reveal .progress span {
+      background: linear-gradient(90deg, var(--cursor-purple), var(--cursor-purple-light));
+    }
+
+    .reveal .controls {
+      color: var(--cursor-purple);
+    }
+
+    .reveal .controls button {
+      color: var(--cursor-muted);
+    }
+
+    .reveal .controls button:hover {
+      color: var(--cursor-purple-light);
+    }
+
+    .reveal .slide-number {
+      font-family: 'Inter', sans-serif;
+      font-size: 0.7rem;
+      font-weight: 500;
+      color: var(--cursor-muted);
+      background: transparent;
+    }
+
+    /* Footer hint */
+    .keyboard-hint {
+      position: fixed;
+      bottom: 1.25rem;
+      left: 50%;
+      transform: translateX(-50%);
+      font-family: 'Inter', sans-serif;
+      font-size: 0.65rem;
+      font-weight: 500;
+      letter-spacing: 0.04em;
+      color: var(--cursor-muted);
+      z-index: 20;
+      pointer-events: none;
+      opacity: 0.7;
+    }
+
+    .keyboard-hint kbd {
+      display: inline-block;
+      padding: 0.15em 0.45em;
+      font-family: 'Inter', sans-serif;
+      font-size: 0.6rem;
+      font-weight: 600;
+      color: var(--cursor-purple-light);
+      background: rgba(107, 70, 246, 0.12);
+      border: 1px solid rgba(107, 70, 246, 0.25);
+      border-radius: 3px;
+      margin: 0 0.1em;
+    }
+  </style>
+</head>
+<body>
+  <div class="reveal">
+    <div class="slides">
+
+      <!-- 0. Title slide -->
+      <section class="title-slide">
+        <div class="title-glow">
+          <h1 class="main-title">Building a World-Class Field Engineering Team</h1>
+        </div>
+        <p class="subtitle">Regional Director, Field Engineering</p>
+        <hr class="section-rule">
+        <p class="meta">
+          <span class="name">David Reinfeld</span><br>
+          June 8, 2026
+        </p>
+      </section>
+
+      <!-- 1. Part 1 -->
+      <section>
+        <span class="section-label">SECTION 01</span>
+        <div class="title-glow">
+          <h2 class="section-title">Part 1: Recruiting, Assessing &amp; Retaining World-Class Field Engineers</h2>
+        </div>
+        <hr class="section-rule">
+      </section>
+
+      <!-- 2. Part 2 -->
+      <section>
+        <span class="section-label">SECTION 02</span>
+        <div class="title-glow">
+          <h2 class="section-title">Part 2: Building a Culture of Excellence</h2>
+        </div>
+        <hr class="section-rule">
+      </section>
+
+      <!-- 3. Part 3 -->
+      <section>
+        <span class="section-label">SECTION 03</span>
+        <div class="title-glow">
+          <h2 class="section-title">Part 3: 10 · 20 · 30 Day Impact Plan</h2>
+        </div>
+        <hr class="section-rule">
+      </section>
+
+      <!-- 4. Part 4 -->
+      <section>
+        <span class="section-label">SECTION 04</span>
+        <div class="title-glow">
+          <h2 class="section-title">Part 4: Metrics &amp; Measuring Impact</h2>
+        </div>
+        <hr class="section-rule">
+      </section>
+
+      <!-- 5. Close slide -->
+      <section class="close-slide">
+        <div class="title-glow">
+          <h2 class="section-title">Let's Build Something Exceptional</h2>
+        </div>
+        <hr class="section-rule">
+      </section>
+
+    </div>
+  </div>
+
+  <div class="keyboard-hint">
+    <kbd>→</kbd> next section &nbsp;&nbsp; <kbd>ESC</kbd> overview
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/reveal.js"></script>
+  <script>
+    Reveal.initialize({
+      hash: true,
+      progress: true,
+      controls: true,
+      slideNumber: 'c/t',
+      transition: 'slide',
+      transitionSpeed: 'default',
+      backgroundTransition: 'fade',
+      center: true,
+      width: 1280,
+      height: 720,
+      margin: 0.08,
+    });
+  </script>
+</body>
+</html>
