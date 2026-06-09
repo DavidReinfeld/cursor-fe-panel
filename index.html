@@ -812,8 +812,16 @@
     .impact-phase-sections {
       display: flex;
       flex-direction: column;
-      gap: 0.85rem;
+      gap: 0;
       width: 100%;
+    }
+
+    .impact-phase-section + .impact-phase-section {
+      margin-top: 1rem;
+    }
+
+    .impact-phase-section.impact-phase-section--early-wins {
+      margin-top: 2.25rem;
     }
 
     .impact-phase-sections--split {
@@ -825,6 +833,11 @@
 
     .impact-phase-section {
       min-width: 0;
+      margin-bottom: 0;
+    }
+
+    .impact-phase-section .impact-item-body {
+      margin: 0 0 0.4rem;
     }
 
     .reveal .impact-phase-heading {
@@ -856,6 +869,14 @@
       color: #F5F5F5;
       line-height: 1.3;
       margin: 0 0 0.25rem;
+    }
+
+    .impact-credibility-body {
+      font-size: 0.65rem;
+      font-weight: 400;
+      color: #A1A1AA;
+      line-height: 1.4;
+      margin: 0;
     }
 
     .reveal ul.impact-bullet-list {
@@ -891,14 +912,29 @@
       line-height: 1.4;
     }
 
-    .impact-phase-section--compact .impact-item-body {
-      margin: 0 0 0.15rem;
-      line-height: 1.35;
+    .impact-experiment-boxes {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 0.75rem;
+      width: 100%;
+      margin: 0;
     }
 
-    .impact-phase-section--compact .impact-bullet-list li {
-      margin-bottom: 0.15rem !important;
-      line-height: 1.35 !important;
+    .impact-experiment-box {
+      min-width: 0;
+      background: #141414;
+      border: 1px solid #262626;
+      border-radius: 6px;
+      padding: 0.55rem 0.65rem;
+      box-sizing: border-box;
+    }
+
+    .impact-experiment-box p {
+      font-size: 0.62rem;
+      font-weight: 400;
+      color: #A1A1AA;
+      line-height: 1.4;
+      margin: 0;
     }
 
     .impact-statement-list {
@@ -945,8 +981,9 @@
     .impact-wins-list--grid {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      column-gap: 1.25rem;
-      row-gap: 0.28rem;
+      column-gap: 1.5rem;
+      row-gap: 0.6rem;
+      margin: 0;
     }
 
     .impact-win-num {
@@ -1551,24 +1588,16 @@
                 <p class="impact-item-body">Understand goals, pipeline health, what FE is driving vs. not, coverage/capacity model, and where revenue is at risk. I&rsquo;ll find our 2&ndash;3 highest stakes deals and embed in them; own a live discovery or demo by EOW.</p>
               </div>
               <div class="impact-item">
-                <h3 class="impact-item-title">My Directs</h3>
-                <p class="impact-item-body">Share intake form and have structured 1:1 with every direct report &mdash; understand them as people, where they need support, what&rsquo;s slowing them down, and where I need to lean on them.</p>
-              </div>
-              <div class="impact-item">
                 <h3 class="impact-item-title">Hiring and Recruiting</h3>
                 <p class="impact-item-body">Take immediate ownership of open reqs and pipeline from Sahil. Partner with recruiting to understand process and identify any gaps to be solved. Outbound candidate PG immediately. Categorize candidate quality from 1&ndash;3 based on criteria discussed earlier.</p>
               </div>
               <div class="impact-item">
-                <h3 class="impact-item-title">Immediate Peers/Partners</h3>
-                <p class="impact-item-body">Sahil, direct peers, AE leaders, and highest impact FEs &mdash; no one else yet. Learn what team is doing to drive success, where we&rsquo;re seeing failures in deals and hiring. Days 11+ will expand to secondary and tertiary spheres (key product team members, other FEs, AE 2LLs, etc).</p>
+                <h3 class="impact-item-title">Product, Personas and PoV</h3>
+                <p class="impact-item-body">Ramp by doing. Use Cursor on real tasks, watch workshops, join customer calls, talk to 2 existing customer champions, build an agent to scan existing calls to surface ICP patterns and CoM framework. Learn what customers want that we don&rsquo;t have today &mdash; by my vertical specifically. Are we selling with an industry PoV or are we selling features?</p>
               </div>
               <div class="impact-item">
-                <h3 class="impact-item-title">Product and Personas</h3>
-                <p class="impact-item-body">Ramp by doing. Use Cursor on real tasks, watch workshops, join customer calls, talk to 2 existing customer champions, build an agent to scan existing calls to surface ICP patterns and CoM framework. Learn what customers want that we don&rsquo;t have today &mdash; by my vertical specifically. Identify process for logging feedback with Product &mdash; fix if non-existent (great Airtable use case). Maybe someone will let me fix a feature :)</p>
-              </div>
-              <div class="impact-item">
-                <h3 class="impact-item-title">Gap Analysis On The Four Key Areas</h3>
-                <p class="impact-item-body">Assess where we stand on Values, Competencies, Operating Rhythm, and Career Growth &mdash; what exists, what&rsquo;s implicit, what I need to build. Company phase will be chaotic in certain ways; team standards are within our control.</p>
+                <h3 class="impact-item-title">Team</h3>
+                <p class="impact-item-body">Start with direct team, immediate peers/partners, and top 3 highest impact/tenure FEs. Learn what&rsquo;s driving success and failure in hiring and performance. For directs, share intake form, hold 1:1s, understand them as people, where they need support, what&rsquo;s slowing them down, and where I need to learn on them. Understand team norms and map the gap against the 4 key areas for success (values, competencies, op. rhythm, career growth).</p>
               </div>
             </div>
           </div>
@@ -1584,38 +1613,34 @@
                 <div class="impact-credibility-grid">
                   <div class="impact-phase-subsection">
                     <p class="impact-phase-label">Team&hellip;</p>
-                    <ul class="impact-bullet-list">
-                      <li>Show up with humility, ready to roll up my sleeves, learn, and ask the stupid questions out loud to create a low-ego learning environment</li>
-                      <li>Demonstrate deep care for the wellbeing, performance, and career trajectory of my team as well as strong fundamentals on how to do it without creating chaos</li>
-                      <li>Share a thoughtful and honest PoV on the current state of the team (headwinds and tailwinds)</li>
-                    </ul>
+                    <p class="impact-credibility-body">Show up with humility, ready to roll up my sleeves, learn, and ask the stupid questions out loud to create a low-ego learning environment. Demonstrate deep care for the wellbeing, performance, and career trajectory of my team as well as strong fundamentals on how to do it without creating chaos. Share a thoughtful and honest PoV on the current state of the team (headwinds and tailwinds).</p>
                   </div>
                   <div class="impact-phase-subsection">
                     <p class="impact-phase-label">XFN (Sales)&hellip;</p>
-                    <ul class="impact-bullet-list">
-                      <li>Show up ready to learn, understand their needs and approach, and personally get hands-on early</li>
-                      <li>Demonstrate strong understanding of the business, CoM/sales fundamentals, and provide transparency around team standards they can expect. Meet with customers right away</li>
-                    </ul>
+                    <p class="impact-credibility-body">Show up ready to learn, understand their needs and approach, and personally get hands-on early. Demonstrate strong understanding of the business, CoM/sales fundamentals, and provide transparency around team standards they can expect. Meet with customers right away.</p>
                   </div>
                   <div class="impact-phase-subsection">
                     <p class="impact-phase-label">Customers&hellip;</p>
-                    <ul class="impact-bullet-list">
-                      <li>Be transparent that I won&rsquo;t be a Cursor expert yet &mdash; but show up as a thought partner by understanding their problems, having a PoV on the industry/vertical landscape and how to evaluate our technology, and sharing where we see the category heading</li>
-                      <li>Ask questions that demonstrate I&rsquo;m being thoughtful about their world and pains. Customers are looking for partners to help them navigate a rapidly changing LLM quality, platform capability, and cost landscape</li>
-                    </ul>
+                    <p class="impact-credibility-body">Be transparent that I won&rsquo;t be a Cursor expert yet &mdash; but show up as a thought partner by understanding their problems, having a PoV on the industry/vertical landscape and how to evaluate our technology, and sharing where we see the category heading. Ask questions that demonstrate I&rsquo;m being thoughtful about their world and pains. Customers are looking for partners to help them navigate a rapidly changing LLM quality, platform capability, and cost landscape.</p>
                   </div>
                 </div>
               </div>
-              <div class="impact-phase-section impact-phase-section--compact">
+              <div class="impact-phase-section">
                 <h3 class="impact-phase-heading">Initial Changes and Experiments</h3>
                 <p class="impact-item-body">The business is moving from PLG &rarr; SLG and is also focusing on verticals. The 3 following areas are those we can get quick experimental wins in:</p>
-                <ul class="impact-bullet-list">
-                  <li>Do we have the right discovery and qualification framework as well as POC process to run controlled cycles? Do AEs and SCs agree on what those are? Are we documenting required capabilities as a shared artifact with the customer?</li>
-                  <li>Are we selling with an industry specific PoV or a general one? Leading with features, or narrative? Are our &ldquo;pitches&rdquo; resulting in low value deals or transformative engagements?</li>
-                  <li>Are the proposed values, competencies, and rhythm congruent with the reality and current state of the business? What changes should we consider to adapt them?</li>
-                </ul>
+                <div class="impact-experiment-boxes">
+                  <div class="impact-experiment-box">
+                    <p>Do we have the right discovery and qualification framework as well as POC process to run controlled cycles? Do AEs and SCs agree on what those are? Are we documenting required capabilities as a shared artifact with the customer?</p>
+                  </div>
+                  <div class="impact-experiment-box">
+                    <p>Are we selling with an industry specific PoV or a general one? Leading with features, or narrative? Are our &ldquo;pitches&rdquo; resulting in low value deals or transformative engagements?</p>
+                  </div>
+                  <div class="impact-experiment-box">
+                    <p>Are the proposed values, competencies, and rhythm congruent with the reality and current state of the business? What changes should we consider to adapt them?</p>
+                  </div>
+                </div>
               </div>
-              <div class="impact-phase-section">
+              <div class="impact-phase-section impact-phase-section--early-wins">
                 <h3 class="impact-phase-heading">Early Wins</h3>
                 <ol class="impact-wins-list impact-wins-list--grid">
                   <li><span class="impact-win-num">01</span><span>First structured POC cycle run or redesigned</span></li>
