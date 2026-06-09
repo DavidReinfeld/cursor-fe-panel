@@ -220,6 +220,7 @@
     /* Content slides — left-aligned layout */
     .slide-inner--left {
       align-items: stretch;
+      justify-content: flex-start;
       text-align: left;
       padding: 1.75rem 2.5rem;
     }
@@ -441,9 +442,9 @@
     /* Culture clarity slide */
     .slide-inner--culture {
       align-items: stretch;
-      justify-content: center;
+      justify-content: flex-start;
       text-align: left;
-      padding: 2rem 2.5rem;
+      padding: 1.75rem 2rem;
       gap: 0;
     }
 
@@ -654,15 +655,17 @@
 
     .slide-inner--competencies {
       justify-content: flex-start;
-      padding: 1.75rem 2rem;
+      padding: 1.5rem 1.75rem;
     }
 
     .competencies-layout {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      gap: 2rem;
+      gap: 1.5rem;
       width: 100%;
       align-items: stretch;
+      flex: 1;
+      min-height: 0;
     }
 
     .competencies-col--list,
@@ -691,11 +694,17 @@
 
     .slide-inner--competencies .competencies-list {
       flex: 1;
+      display: grid !important;
+      grid-template-columns: 1fr 1fr;
+      column-gap: 1rem;
+      row-gap: 0.45rem;
+      align-content: start;
     }
 
     .slide-inner--competencies .competencies-list li {
-      font-size: 0.875rem !important;
-      margin: 0 0 0.75rem 0 !important;
+      font-size: 0.8rem !important;
+      margin: 0 !important;
+      padding: 0 0 0 0.85rem !important;
     }
 
     .slide-inner--competencies .competencies-key {
@@ -713,14 +722,14 @@
       background: #6B46F6 !important;
       font-weight: 700 !important;
       color: #F5F5F5 !important;
-      font-size: 13px !important;
-      padding: 10px 16px !important;
+      font-size: 12px !important;
+      padding: 8px 12px !important;
       text-align: left !important;
       border: none !important;
     }
 
     .reveal table.leveling-table td {
-      padding: 10px 16px !important;
+      padding: 8px 12px !important;
       text-align: left !important;
       border-bottom: 1px solid #262626 !important;
       vertical-align: top;
@@ -729,21 +738,21 @@
     .reveal table.leveling-table td.leveling-cell--level {
       font-weight: 600 !important;
       color: #F5F5F5 !important;
-      font-size: 13px !important;
+      font-size: 12px !important;
       white-space: nowrap;
     }
 
     .reveal table.leveling-table td.leveling-cell--focus {
       font-weight: 400 !important;
       color: #A78BFA !important;
-      font-size: 13px !important;
+      font-size: 12px !important;
     }
 
     .reveal table.leveling-table td.leveling-cell--example {
       font-weight: 400 !important;
       color: #A1A1AA !important;
-      font-size: 12px !important;
-      line-height: 1.5 !important;
+      font-size: 11px !important;
+      line-height: 1.45 !important;
     }
 
     .reveal table.leveling-table tbody tr:nth-child(odd) td {
@@ -768,14 +777,14 @@
       align-items: stretch;
       justify-content: flex-start;
       text-align: left;
-      padding: 2rem 2.5rem 3.5rem;
+      padding: 1.5rem 1.75rem;
       gap: 0;
       position: relative;
     }
 
     .rhythm-content {
       display: flex;
-      gap: 1.5rem;
+      gap: 1.25rem;
       width: 100%;
       flex: 1;
       align-items: flex-start;
@@ -1192,7 +1201,7 @@
                 </div>
               </div>
               <div class="competencies-col competencies-col--leveling">
-                <p class="competencies-col-header">SAMPLE LEVELING GROWTH</p>
+                <p class="competencies-col-header">SAMPLE LEVELING GROWTH: THOUGHT LEADERSHIP</p>
                 <hr class="competencies-col-rule">
                 <table class="leveling-table">
                   <thead>
@@ -1216,7 +1225,7 @@
                     <tr>
                       <td class="leveling-cell--level">Senior FE</td>
                       <td class="leveling-cell--focus">Externally visible within the broader community</td>
-                      <td class="leveling-cell--example">Leading webinars</td>
+                      <td class="leveling-cell--example">Leading webinars; engaging with the community on forums and social platforms</td>
                     </tr>
                     <tr>
                       <td class="leveling-cell--level">Lead FE</td>
@@ -1230,7 +1239,6 @@
                     </tr>
                   </tbody>
                 </table>
-                <p class="leveling-footnote">Thought Leadership competency shown as illustrative example</p>
               </div>
             </div>
           </div>
@@ -1392,6 +1400,25 @@
       height: 720,
       margin: 0.08,
     });
+
+    function fitDenseSlides() {
+      document.querySelectorAll('.slide-inner--culture, .slide-inner--competencies, .slide-inner--rhythm, .slide-inner--left').forEach(function (inner) {
+        inner.style.transform = '';
+        var section = inner.closest('section');
+        if (!section) return;
+        var available = section.clientHeight;
+        var content = inner.scrollHeight;
+        if (content > available + 2) {
+          var scale = available / content;
+          inner.style.transform = 'scale(' + scale + ')';
+          inner.style.transformOrigin = 'top center';
+        }
+      });
+    }
+
+    Reveal.on('ready', fitDenseSlides);
+    Reveal.on('slidechanged', fitDenseSlides);
+    Reveal.on('resize', fitDenseSlides);
   </script>
 </body>
 </html>
