@@ -437,6 +437,515 @@
       border: none;
       margin: 1.25rem auto 0;
     }
+
+    /* Culture clarity slide */
+    .slide-inner--culture {
+      align-items: stretch;
+      justify-content: center;
+      text-align: left;
+      padding: 2rem 2.5rem;
+      gap: 0;
+    }
+
+    .culture-slide-title {
+      font-size: 28px !important;
+      font-weight: 600 !important;
+      color: #F5F5F5 !important;
+      line-height: 1.3 !important;
+      margin: 0 0 8px !important;
+      text-align: left;
+      align-self: flex-start;
+      letter-spacing: -0.01em !important;
+    }
+
+    .culture-slide-title-rule {
+      width: 100%;
+      height: 1px;
+      background: #262626;
+      border: none;
+      margin: 0 0 1.5rem;
+    }
+
+    .culture-cards {
+      display: flex;
+      gap: 20px;
+      align-items: stretch;
+      width: 100%;
+    }
+
+    .culture-card {
+      flex: 1;
+      min-width: 0;
+      background: #141414;
+      border: 1px solid #262626;
+      border-radius: 8px;
+      padding: 32px;
+      box-sizing: border-box;
+      text-align: left;
+    }
+
+    .culture-card-question {
+      font-size: 20px !important;
+      font-weight: 600 !important;
+      color: #A78BFA !important;
+      line-height: 1.35 !important;
+      margin: 0 0 0.5rem !important;
+      text-transform: none !important;
+      letter-spacing: normal !important;
+    }
+
+    .culture-card-subtext {
+      font-size: 15px !important;
+      font-weight: 600 !important;
+      color: #F5F5F5 !important;
+      line-height: 1.5 !important;
+      margin: 0 !important;
+    }
+
+    .culture-values-heading {
+      font-size: 28px !important;
+      font-weight: 600 !important;
+      color: #A78BFA !important;
+      line-height: 1.3 !important;
+      margin: 0 0 0.35rem !important;
+      text-align: left;
+      align-self: flex-start;
+      letter-spacing: -0.01em !important;
+    }
+
+    .culture-values-subtext {
+      font-size: 15px !important;
+      font-weight: 600 !important;
+      color: #F5F5F5 !important;
+      line-height: 1.5 !important;
+      margin: 0 0 0.5rem !important;
+    }
+
+    .reveal ul.culture-values-list {
+      display: flex !important;
+      flex-direction: column !important;
+      margin: 0 !important;
+      padding: 0 !important;
+      list-style: none !important;
+      list-style-type: none !important;
+      width: 100%;
+    }
+
+    .reveal .culture-values-list li {
+      display: flex !important;
+      align-items: center;
+      gap: 1rem;
+      font-size: 1.15rem !important;
+      font-weight: 600 !important;
+      color: #F5F5F5 !important;
+      line-height: 1.35 !important;
+      margin: 0 0 2.75rem 0 !important;
+      padding: 0 0 0 2rem !important;
+      list-style: none !important;
+      list-style-type: none !important;
+      border: none !important;
+    }
+
+    .reveal .culture-values-list li:last-child {
+      margin-bottom: 0 !important;
+    }
+
+    .reveal .culture-values-list li::before {
+      content: '';
+      flex-shrink: 0;
+      width: 3px;
+      height: 1.25em;
+      background: #6B46F6;
+      border-radius: 1px;
+    }
+
+    .reveal .culture-values-list--career li {
+      font-size: 1.05rem !important;
+      margin: 0 0 1.5rem 0 !important;
+    }
+
+    .reveal ul.competencies-list {
+      display: flex !important;
+      flex-direction: column !important;
+      margin: 0 !important;
+      padding: 0 !important;
+      list-style: none !important;
+      list-style-type: none !important;
+      width: 100%;
+    }
+
+    .reveal .competencies-list li {
+      display: flex !important;
+      align-items: center;
+      gap: 0.85rem;
+      font-size: 0.95rem !important;
+      font-weight: 600 !important;
+      color: #F5F5F5 !important;
+      line-height: 1.35 !important;
+      margin: 0 0 1.1rem 0 !important;
+      padding: 0 0 0 1.25rem !important;
+      list-style: none !important;
+      list-style-type: none !important;
+      border: none !important;
+    }
+
+    .reveal .competencies-list li:last-child {
+      margin-bottom: 0 !important;
+    }
+
+    .reveal .competencies-list li::before {
+      content: '';
+      flex-shrink: 0;
+      width: 3px;
+      height: 1.25em;
+      border-radius: 1px;
+    }
+
+    .reveal .competencies-list li.competency--customer::before {
+      background: #6B46F6;
+    }
+
+    .reveal .competencies-list li.competency--internal::before {
+      background: #F59E0B;
+    }
+
+    .reveal .competencies-list li.competency--brand::before {
+      background: #F472B6;
+    }
+
+    .competencies-key {
+      display: flex;
+      gap: 1.75rem;
+      margin-top: 1.5rem;
+      padding-top: 1.25rem;
+      border-top: 1px solid #262626;
+      width: 100%;
+    }
+
+    .competencies-key-item {
+      display: flex;
+      align-items: center;
+      gap: 0.55rem;
+      font-size: 0.75rem;
+      font-weight: 500;
+      color: #A1A1AA;
+      letter-spacing: 0.01em;
+    }
+
+    .competencies-key-item::before {
+      content: '';
+      flex-shrink: 0;
+      width: 3px;
+      height: 1em;
+      border-radius: 1px;
+    }
+
+    .competencies-key-item--customer::before {
+      background: #6B46F6;
+    }
+
+    .competencies-key-item--brand::before {
+      background: #F472B6;
+    }
+
+    .competencies-key-item--internal::before {
+      background: #F59E0B;
+    }
+
+    .slide-inner--competencies {
+      justify-content: flex-start;
+      padding: 1.75rem 2rem;
+    }
+
+    .competencies-layout {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2rem;
+      width: 100%;
+      align-items: stretch;
+    }
+
+    .competencies-col--list,
+    .competencies-col--leveling {
+      min-width: 0;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .competencies-col-header {
+      font-size: 13px;
+      font-weight: 600;
+      font-variant: small-caps;
+      letter-spacing: 0.1em;
+      color: #A78BFA;
+      margin: 0 0 0.5rem;
+    }
+
+    .competencies-col-rule {
+      width: 100%;
+      height: 1px;
+      background: #262626;
+      border: none;
+      margin: 0 0 0.75rem;
+    }
+
+    .slide-inner--competencies .competencies-list {
+      flex: 1;
+    }
+
+    .slide-inner--competencies .competencies-list li {
+      font-size: 0.875rem !important;
+      margin: 0 0 0.75rem 0 !important;
+    }
+
+    .slide-inner--competencies .competencies-key {
+      margin-top: auto;
+      padding-top: 1rem;
+    }
+
+    .reveal table.leveling-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 0;
+    }
+
+    .reveal table.leveling-table th {
+      background: #6B46F6 !important;
+      font-weight: 700 !important;
+      color: #F5F5F5 !important;
+      font-size: 13px !important;
+      padding: 10px 16px !important;
+      text-align: left !important;
+      border: none !important;
+    }
+
+    .reveal table.leveling-table td {
+      padding: 10px 16px !important;
+      text-align: left !important;
+      border-bottom: 1px solid #262626 !important;
+      vertical-align: top;
+    }
+
+    .reveal table.leveling-table td.leveling-cell--level {
+      font-weight: 600 !important;
+      color: #F5F5F5 !important;
+      font-size: 13px !important;
+      white-space: nowrap;
+    }
+
+    .reveal table.leveling-table td.leveling-cell--focus {
+      font-weight: 400 !important;
+      color: #A78BFA !important;
+      font-size: 13px !important;
+    }
+
+    .reveal table.leveling-table td.leveling-cell--example {
+      font-weight: 400 !important;
+      color: #A1A1AA !important;
+      font-size: 12px !important;
+      line-height: 1.5 !important;
+    }
+
+    .reveal table.leveling-table tbody tr:nth-child(odd) td {
+      background: #141414 !important;
+    }
+
+    .reveal table.leveling-table tbody tr:nth-child(even) td {
+      background: #0A0A0A !important;
+    }
+
+    .leveling-footnote {
+      font-size: 11px;
+      font-weight: 400;
+      color: #A1A1AA;
+      margin-top: auto;
+      padding-top: 8px;
+      line-height: 1.4;
+    }
+
+    /* Operating Rhythm slide */
+    .slide-inner--rhythm {
+      align-items: stretch;
+      justify-content: flex-start;
+      text-align: left;
+      padding: 2rem 2.5rem 3.5rem;
+      gap: 0;
+      position: relative;
+    }
+
+    .rhythm-content {
+      display: flex;
+      gap: 1.5rem;
+      width: 100%;
+      flex: 1;
+      align-items: flex-start;
+      min-height: 0;
+    }
+
+    .rhythm-table-wrap,
+    .rhythm-meeting-wrap {
+      flex: 1;
+      min-width: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: stretch;
+      justify-content: flex-start;
+    }
+
+    .rhythm-meeting-card {
+      display: flex;
+      background: #141414;
+      border-radius: 8px;
+      overflow: hidden;
+      border: 1px solid #262626;
+    }
+
+    .rhythm-meeting-sidebar {
+      width: 148px;
+      flex-shrink: 0;
+      padding: 1.25rem 1rem;
+      background: #0A0A0A;
+      border-right: 1px solid #262626;
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+    }
+
+    .rhythm-meeting-sidebar h3 {
+      font-size: 15px !important;
+      font-weight: 500 !important;
+      color: #F5F5F5 !important;
+      line-height: 1.3 !important;
+      margin: 0 !important;
+      text-transform: none !important;
+      letter-spacing: normal !important;
+    }
+
+    .rhythm-meeting-sidebar p {
+      font-size: 10px !important;
+      color: #A1A1AA !important;
+      line-height: 1.55 !important;
+      font-style: italic;
+      margin: 0 !important;
+    }
+
+    .rhythm-meeting-body {
+      flex: 1;
+      min-width: 0;
+      padding: 1.15rem 1.25rem;
+      background: #141414;
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+    }
+
+    .rhythm-meeting-meta {
+      display: flex;
+      gap: 1.5rem;
+      line-height: 1.4;
+    }
+
+    .rhythm-meeting-field-label {
+      font-size: 11.5px;
+      font-weight: 500;
+      color: #F5F5F5;
+    }
+
+    .rhythm-meeting-field-value {
+      font-size: 11.5px;
+      font-weight: 400;
+      color: #F5F5F5;
+    }
+
+    .rhythm-meeting-divider {
+      height: 1px;
+      background: #262626;
+      flex-shrink: 0;
+    }
+
+    .rhythm-meeting-section-title {
+      font-size: 11.5px;
+      font-weight: 500;
+      color: #F5F5F5;
+      margin: 0 0 0.55rem;
+      line-height: 1.3;
+    }
+
+    .rhythm-meeting-agenda {
+      display: flex;
+      flex-direction: column;
+      gap: 0.6rem;
+    }
+
+    .rhythm-meeting-agenda-item {
+      display: flex;
+      flex-direction: column;
+      gap: 0.15rem;
+    }
+
+    .rhythm-meeting-agenda-label {
+      font-size: 10.5px;
+      font-weight: 500;
+      color: #F5F5F5;
+      line-height: 1.3;
+    }
+
+    .rhythm-meeting-agenda-desc {
+      font-size: 10px;
+      color: #A1A1AA;
+      line-height: 1.5;
+    }
+
+    .rhythm-meeting-footnote {
+      font-size: 10px;
+      color: #A1A1AA;
+      font-style: italic;
+      margin: 0;
+      line-height: 1.5;
+    }
+
+    .rhythm-table-heading {
+      font-size: 15px;
+      font-weight: 600;
+      color: #F5F5F5;
+      margin: 0 0 0.75rem;
+      text-align: left;
+    }
+
+    .reveal table.rhythm-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 0;
+    }
+
+    .reveal table.rhythm-table th {
+      background: #6B46F6 !important;
+      font-weight: 700 !important;
+      color: #F5F5F5 !important;
+      font-size: 14px !important;
+      padding: 12px 24px !important;
+      text-align: left !important;
+      border: none !important;
+    }
+
+    .reveal table.rhythm-table td {
+      font-weight: 400 !important;
+      color: #F5F5F5 !important;
+      font-size: 14px !important;
+      padding: 12px 24px !important;
+      text-align: left !important;
+      border-bottom: 1px solid #262626 !important;
+      vertical-align: top;
+    }
+
+    .reveal table.rhythm-table tbody tr:nth-child(odd) td {
+      background: #141414 !important;
+    }
+
+    .reveal table.rhythm-table tbody tr:nth-child(even) td {
+      background: #0A0A0A !important;
+    }
+
   </style>
 </head>
 <body>
@@ -616,6 +1125,216 @@
             </div>
           </div>
         </section>
+        <section>
+          <div class="slide-inner slide-inner--culture">
+            <h2 class="culture-slide-title">Clarity in Four Key Areas Creates an Environment for Success</h2>
+            <hr class="culture-slide-title-rule">
+            <div class="culture-cards">
+              <div class="culture-card">
+                <p class="culture-card-question">Values</p>
+                <p class="culture-card-subtext">How we operate</p>
+              </div>
+              <div class="culture-card">
+                <p class="culture-card-question">Competencies</p>
+                <p class="culture-card-subtext">What we should excel at</p>
+              </div>
+              <div class="culture-card">
+                <p class="culture-card-question">Operating Rhythm</p>
+                <p class="culture-card-subtext">What happens when</p>
+              </div>
+              <div class="culture-card">
+                <p class="culture-card-question">Career and Growth</p>
+                <p class="culture-card-subtext">Why we're here</p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section>
+          <div class="slide-inner slide-inner--culture">
+            <h2 class="culture-values-heading">Values</h2>
+            <p class="culture-values-subtext">How we operate</p>
+            <hr class="culture-slide-title-rule">
+            <ul class="culture-values-list">
+              <li>Learn, Together</li>
+              <li>Set the Standard</li>
+              <li>The Little Things Are the Big Things</li>
+              <li>Act Like an Owner</li>
+              <li>Effort and Attitude</li>
+            </ul>
+          </div>
+        </section>
+        <section>
+          <div class="slide-inner slide-inner--culture slide-inner--competencies">
+            <h2 class="culture-values-heading">Competencies</h2>
+            <p class="culture-values-subtext">What we should excel at</p>
+            <hr class="culture-slide-title-rule">
+            <div class="competencies-layout">
+              <div class="competencies-col competencies-col--list">
+                <p class="competencies-col-header">COMPETENCY AREAS</p>
+                <hr class="competencies-col-rule">
+                <ul class="competencies-list">
+                  <li class="competency--customer">Prep</li>
+                  <li class="competency--customer">Consultative Discovery</li>
+                  <li class="competency--customer">Demo and Presentation Skills</li>
+                  <li class="competency--customer">Champion Building</li>
+                  <li class="competency--customer">Influencing Required Capabilities</li>
+                  <li class="competency--customer">Technical Validation and Proof of Concept</li>
+                  <li class="competency--customer">Business, Industry, and Technical Acumen</li>
+                  <li class="competency--brand">Thought Leadership</li>
+                  <li class="competency--internal">XFN Partnerships</li>
+                  <li class="competency--internal">Internal Systems, Process, and Documentation</li>
+                  <li class="competency--internal">Ownership and Impact</li>
+                </ul>
+                <div class="competencies-key">
+                  <span class="competencies-key-item competencies-key-item--customer">Customer</span>
+                  <span class="competencies-key-item competencies-key-item--brand">Brand</span>
+                  <span class="competencies-key-item competencies-key-item--internal">Internal</span>
+                </div>
+              </div>
+              <div class="competencies-col competencies-col--leveling">
+                <p class="competencies-col-header">SAMPLE LEVELING GROWTH</p>
+                <hr class="competencies-col-rule">
+                <table class="leveling-table">
+                  <thead>
+                    <tr>
+                      <th>Level</th>
+                      <th>Focus</th>
+                      <th>Example</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="leveling-cell--level">Associate FE</td>
+                      <td class="leveling-cell--focus">Building internal SME credibility</td>
+                      <td class="leveling-cell--example">Actively learning the product and category; begins sharing observations and points of view internally — Slack threads, team meetings, call debriefs</td>
+                    </tr>
+                    <tr>
+                      <td class="leveling-cell--level">FE</td>
+                      <td class="leveling-cell--focus">Recognized internal SME</td>
+                      <td class="leveling-cell--example">Owns a product topic or process area; becomes the team&rsquo;s go-to on that subject</td>
+                    </tr>
+                    <tr>
+                      <td class="leveling-cell--level">Senior FE</td>
+                      <td class="leveling-cell--focus">Externally visible within the broader community</td>
+                      <td class="leveling-cell--example">Leading webinars</td>
+                    </tr>
+                    <tr>
+                      <td class="leveling-cell--level">Lead FE</td>
+                      <td class="leveling-cell--focus">Recognized external voice, associated with Cursor</td>
+                      <td class="leveling-cell--example">Speaking at Cursor-hosted conferences and events</td>
+                    </tr>
+                    <tr>
+                      <td class="leveling-cell--level">Principal FE</td>
+                      <td class="leveling-cell--focus">Category-level influence, independent of Cursor</td>
+                      <td class="leveling-cell--example">Speaking at industry events with original, differentiated points of view</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <p class="leveling-footnote">Thought Leadership competency shown as illustrative example</p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section>
+          <div class="slide-inner slide-inner--rhythm">
+            <h2 class="culture-values-heading">Operating Rhythm</h2>
+            <p class="culture-values-subtext">What happens when</p>
+            <hr class="culture-slide-title-rule">
+            <div class="rhythm-content">
+              <div class="rhythm-table-wrap">
+                <p class="rhythm-table-heading">Sample Weekly Cadence</p>
+                <table class="rhythm-table">
+                  <thead>
+                    <tr>
+                      <th>Day</th>
+                      <th>Focus</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Monday</td>
+                      <td>Team Sync + Weekly Priorities</td>
+                    </tr>
+                    <tr>
+                      <td>Monday</td>
+                      <td>Manager + XFN 1:1s</td>
+                    </tr>
+                    <tr>
+                      <td>Tue – Fri</td>
+                      <td>Customer Engagements</td>
+                    </tr>
+                    <tr>
+                      <td>Thursday</td>
+                      <td>Deal Reviews + CRM Hygiene</td>
+                    </tr>
+                    <tr>
+                      <td>Friday</td>
+                      <td>Reflect, document, prep following week</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="rhythm-meeting-wrap">
+                <p class="rhythm-table-heading">Sample Team Meeting</p>
+                <div class="rhythm-meeting-card">
+                  <div class="rhythm-meeting-sidebar">
+                    <h3>Team Meetings</h3>
+                    <p>Weekly team meetings are a great way to get together as a group, set the tone for the week, and ensure alignment on what matters most</p>
+                  </div>
+                  <div class="rhythm-meeting-body">
+                    <div class="rhythm-meeting-meta">
+                      <span><span class="rhythm-meeting-field-label">Frequency:</span> <span class="rhythm-meeting-field-value">Weekly</span></span>
+                      <span><span class="rhythm-meeting-field-label">Duration:</span> <span class="rhythm-meeting-field-value">1 Hour</span></span>
+                    </div>
+                    <div class="rhythm-meeting-divider"></div>
+                    <div class="rhythm-meeting-structure">
+                      <p class="rhythm-meeting-section-title">Structure</p>
+                      <div class="rhythm-meeting-agenda">
+                        <div class="rhythm-meeting-agenda-item">
+                          <span class="rhythm-meeting-agenda-label">Wins &amp; Personal Highlights</span>
+                          <span class="rhythm-meeting-agenda-desc">Celebrate progress — professional and personal — to open with energy</span>
+                        </div>
+                        <div class="rhythm-meeting-agenda-item">
+                          <span class="rhythm-meeting-agenda-label">Company &amp; Team Updates</span>
+                          <span class="rhythm-meeting-agenda-desc">Org news, product releases, and broader business context</span>
+                        </div>
+                        <div class="rhythm-meeting-agenda-item">
+                          <span class="rhythm-meeting-agenda-label">Big Rocks</span>
+                          <span class="rhythm-meeting-agenda-desc">Attainment pulse and the week's highest-priority focus areas</span>
+                        </div>
+                        <div class="rhythm-meeting-agenda-item">
+                          <span class="rhythm-meeting-agenda-label">Sharing &amp; Sharpening the Saw</span>
+                          <span class="rhythm-meeting-agenda-desc">One presenter per week — a deal debrief, a skill drill, or a relevant training topic</span>
+                        </div>
+                        <div class="rhythm-meeting-agenda-item">
+                          <span class="rhythm-meeting-agenda-label">Open Forum</span>
+                          <span class="rhythm-meeting-agenda-desc">Team-driven discussion — add topics to the shared doc linked in the invite</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="rhythm-meeting-divider"></div>
+                    <p class="rhythm-meeting-footnote">Agenda is partly driven by YOU — add topics to the shared doc linked in the invite. Executive guests welcomed periodically to connect strategy with daily execution.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section>
+          <div class="slide-inner slide-inner--culture">
+            <h2 class="culture-values-heading">Career and Growth</h2>
+            <p class="culture-values-subtext">Why we're here</p>
+            <hr class="culture-slide-title-rule">
+            <ul class="culture-values-list culture-values-list--career">
+              <li>Understand people and their motivations — their &lsquo;why&rsquo;</li>
+              <li>Build a transparent competency framework with clarity on how they evolve at each level</li>
+              <li>Run structured career conversations on a consistent cadence, separate from day to day check-ins</li>
+              <li>Communicate around expectations and timelines</li>
+              <li>Build a shared, mutual action plan</li>
+              <li>Put people in the driver's seat</li>
+            </ul>
+          </div>
+        </section>
       </section>
 
       <!-- 3. Part 3 -->
@@ -623,7 +1342,7 @@
         <div class="slide-inner">
           <span class="section-label">SECTION 03</span>
           <div class="title-glow">
-            <h2 class="section-title">10 · 20 · 30 Day Impact Plan</h2>
+            <h2 class="section-title">10/20/30 Day Impact Plan</h2>
           </div>
           <hr class="section-rule">
         </div>
