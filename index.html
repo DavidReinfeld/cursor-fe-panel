@@ -772,6 +772,189 @@
       line-height: 1.4;
     }
 
+    /* Impact plan slides */
+    .slide-inner--impact {
+      padding: 1.5rem 1.75rem;
+    }
+
+    .impact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      column-gap: 1.5rem;
+      row-gap: 0.85rem;
+      width: 100%;
+    }
+
+    .impact-item {
+      min-width: 0;
+    }
+
+    .reveal .impact-item-title {
+      font-size: 24px !important;
+      font-weight: 600 !important;
+      color: #A78BFA !important;
+      line-height: 1.3 !important;
+      margin: 0 0 0.3rem !important;
+      padding-left: 0.65rem;
+      border-left: 3px solid #6B46F6;
+      text-transform: none !important;
+      letter-spacing: normal !important;
+    }
+
+    .impact-item-body {
+      font-size: 0.68rem;
+      font-weight: 400;
+      color: #A1A1AA;
+      line-height: 1.45;
+      margin: 0;
+    }
+
+    .impact-phase-sections {
+      display: flex;
+      flex-direction: column;
+      gap: 0.85rem;
+      width: 100%;
+    }
+
+    .impact-phase-sections--split {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      column-gap: 1.5rem;
+      row-gap: 0.85rem;
+    }
+
+    .impact-phase-section {
+      min-width: 0;
+    }
+
+    .reveal .impact-phase-heading {
+      font-size: 18px !important;
+      font-weight: 600 !important;
+      color: #A78BFA !important;
+      line-height: 1.3 !important;
+      margin: 0 0 0.4rem !important;
+      padding-left: 0.65rem;
+      border-left: 3px solid #6B46F6;
+      text-transform: none !important;
+      letter-spacing: normal !important;
+    }
+
+    .impact-credibility-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      column-gap: 1rem;
+      width: 100%;
+    }
+
+    .impact-phase-subsection {
+      min-width: 0;
+    }
+
+    .impact-phase-label {
+      font-size: 0.7rem;
+      font-weight: 600;
+      color: #F5F5F5;
+      line-height: 1.3;
+      margin: 0 0 0.25rem;
+    }
+
+    .reveal ul.impact-bullet-list {
+      margin: 0 !important;
+      padding: 0 !important;
+      list-style: none !important;
+      list-style-type: none !important;
+    }
+
+    .reveal .impact-bullet-list li {
+      position: relative;
+      padding-left: 0.75rem !important;
+      font-size: 0.65rem !important;
+      font-weight: 400 !important;
+      color: #A1A1AA !important;
+      line-height: 1.4 !important;
+      margin: 0 0 0.3rem 0 !important;
+      list-style: none !important;
+      list-style-type: none !important;
+      border: none !important;
+    }
+
+    .reveal .impact-bullet-list li:last-child {
+      margin-bottom: 0 !important;
+    }
+
+    .reveal .impact-bullet-list li::before {
+      content: '•';
+      position: absolute;
+      left: 0;
+      color: #6B46F6;
+      font-size: 0.75rem;
+      line-height: 1.4;
+    }
+
+    .impact-phase-section--compact .impact-item-body {
+      margin: 0 0 0.15rem;
+      line-height: 1.35;
+    }
+
+    .impact-phase-section--compact .impact-bullet-list li {
+      margin-bottom: 0.15rem !important;
+      line-height: 1.35 !important;
+    }
+
+    .impact-statement-list {
+      display: flex;
+      flex-direction: column;
+      gap: 0.2rem;
+      width: 100%;
+      margin-top: 0;
+    }
+
+    .impact-statement-item {
+      font-size: 0.65rem;
+      font-weight: 400;
+      color: #A1A1AA;
+      line-height: 1.35;
+      margin: 0;
+    }
+
+    .impact-statement-lead {
+      font-weight: 600;
+      color: #F5F5F5;
+    }
+
+    .impact-wins-list {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .impact-wins-list li {
+      display: flex;
+      gap: 0.45rem;
+      font-size: 0.62rem;
+      font-weight: 400;
+      color: #A1A1AA;
+      line-height: 1.35;
+      margin-bottom: 0.28rem;
+    }
+
+    .impact-wins-list li:last-child {
+      margin-bottom: 0;
+    }
+
+    .impact-wins-list--grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      column-gap: 1.25rem;
+      row-gap: 0.28rem;
+    }
+
+    .impact-win-num {
+      flex-shrink: 0;
+      font-weight: 600;
+      color: #A78BFA;
+    }
+
     /* Operating Rhythm slide */
     .slide-inner--rhythm {
       align-items: stretch;
@@ -1018,6 +1201,7 @@
                   <li>Has sold to engineering buyers or comparable technical personas</li>
                   <li>Familiarity with adjacent products and the AI coding category</li>
                   <li>Strong executive and developer presence</li>
+                  <li>Builder mindset and ambiguity tolerance</li>
                 </ul>
               </div>
               <div class="tier-card tier-card--3">
@@ -1347,13 +1531,132 @@
 
       <!-- 3. Part 3 -->
       <section>
-        <div class="slide-inner">
-          <span class="section-label">SECTION 03</span>
-          <div class="title-glow">
-            <h2 class="section-title">10/20/30 Day Impact Plan</h2>
+        <section>
+          <div class="slide-inner">
+            <span class="section-label">SECTION 03</span>
+            <div class="title-glow">
+              <h2 class="section-title">10/20/30 Day Impact Plan</h2>
+            </div>
+            <hr class="section-rule">
           </div>
-          <hr class="section-rule">
-        </div>
+        </section>
+        <section>
+          <div class="slide-inner slide-inner--culture slide-inner--impact">
+            <h2 class="culture-values-heading">Days 1&ndash;10</h2>
+            <p class="culture-values-subtext">Learn, embed, and take ownership</p>
+            <hr class="culture-slide-title-rule">
+            <div class="impact-grid">
+              <div class="impact-item">
+                <h3 class="impact-item-title">The Business and Deals</h3>
+                <p class="impact-item-body">Understand goals, pipeline health, what FE is driving vs. not, coverage/capacity model, and where revenue is at risk. I&rsquo;ll find our 2&ndash;3 highest stakes deals and embed in them; own a live discovery or demo by EOW.</p>
+              </div>
+              <div class="impact-item">
+                <h3 class="impact-item-title">My Directs</h3>
+                <p class="impact-item-body">Share intake form and have structured 1:1 with every direct report &mdash; understand them as people, where they need support, what&rsquo;s slowing them down, and where I need to lean on them.</p>
+              </div>
+              <div class="impact-item">
+                <h3 class="impact-item-title">Hiring and Recruiting</h3>
+                <p class="impact-item-body">Take immediate ownership of open reqs and pipeline from Sahil. Partner with recruiting to understand process and identify any gaps to be solved. Outbound candidate PG immediately. Categorize candidate quality from 1&ndash;3 based on criteria discussed earlier.</p>
+              </div>
+              <div class="impact-item">
+                <h3 class="impact-item-title">Immediate Peers/Partners</h3>
+                <p class="impact-item-body">Sahil, direct peers, AE leaders, and highest impact FEs &mdash; no one else yet. Learn what team is doing to drive success, where we&rsquo;re seeing failures in deals and hiring. Days 11+ will expand to secondary and tertiary spheres (key product team members, other FEs, AE 2LLs, etc).</p>
+              </div>
+              <div class="impact-item">
+                <h3 class="impact-item-title">Product and Personas</h3>
+                <p class="impact-item-body">Ramp by doing. Use Cursor on real tasks, watch workshops, join customer calls, build an agent to scan existing calls to surface ICP patterns and CoM framework. Learn what customers want that we don&rsquo;t have today &mdash; by my vertical specifically. Identify process for logging feedback with Product &mdash; fix if non-existent (great Airtable use case). Maybe someone will let me fix a feature :)</p>
+              </div>
+              <div class="impact-item">
+                <h3 class="impact-item-title">Gap Analysis On The Four Key Areas</h3>
+                <p class="impact-item-body">Assess where we stand on Values, Competencies, Operating Rhythm, and Career Growth &mdash; what exists, what&rsquo;s implicit, what I need to build. Company phase will be chaotic in certain ways; team standards are within our control.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section>
+          <div class="slide-inner slide-inner--culture slide-inner--impact slide-inner--impact-phase">
+            <h2 class="culture-values-heading">Days 11&ndash;20</h2>
+            <p class="culture-values-subtext">Credibility, experiments, and wins</p>
+            <hr class="culture-slide-title-rule">
+            <div class="impact-phase-sections">
+              <div class="impact-phase-section">
+                <h3 class="impact-phase-heading">Establishing Credibility</h3>
+                <div class="impact-credibility-grid">
+                  <div class="impact-phase-subsection">
+                    <p class="impact-phase-label">Team&hellip;</p>
+                    <ul class="impact-bullet-list">
+                      <li>Show up with humility, ready to roll up my sleeves, learn, and ask the stupid questions out loud to create a low-ego learning environment</li>
+                      <li>Demonstrate deep care for the wellbeing, performance, and career trajectory of my team as well as strong fundamentals on how to do it without creating chaos</li>
+                    </ul>
+                  </div>
+                  <div class="impact-phase-subsection">
+                    <p class="impact-phase-label">XFN (Sales)&hellip;</p>
+                    <ul class="impact-bullet-list">
+                      <li>Show up ready to learn, understand their needs and approach, and personally get hands-on early</li>
+                      <li>Demonstrate strong understanding of the business, CoM/sales fundamentals, and provide transparency around team standards they can expect. Meet with customers right away</li>
+                    </ul>
+                  </div>
+                  <div class="impact-phase-subsection">
+                    <p class="impact-phase-label">Customers&hellip;</p>
+                    <ul class="impact-bullet-list">
+                      <li>Be transparent that I won&rsquo;t be a Cursor expert yet &mdash; but show up as a thought partner by understanding their problems, having a PoV on the industry/vertical landscape and how to evaluate our technology, and sharing where we see the category heading</li>
+                      <li>Ask questions that demonstrate I&rsquo;m being thoughtful about their world and pains. Customers are looking for partners to help them navigate a rapidly changing LLM quality, platform capability, and cost landscape</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="impact-phase-section impact-phase-section--compact">
+                <h3 class="impact-phase-heading">Initial Changes and Experiments</h3>
+                <p class="impact-item-body">The business is moving from PLG &rarr; SLG and is also focusing on verticals. The 3 following areas are those we can get quick experimental wins in:</p>
+                <ul class="impact-bullet-list">
+                  <li>Do we have the right discovery and qualification framework as well as POC process to run controlled cycles? Do AEs and SCs agree on what those are? Are we documenting required capabilities as a shared artifact with the customer?</li>
+                  <li>Are we selling with an industry specific PoV or a general one? Leading with features, or narrative? Are our &ldquo;pitches&rdquo; resulting in low value deals or transformative engagements?</li>
+                  <li>Are the proposed values, competencies, and rhythm congruent with the reality and current state of the business? What changes should we consider to adapt them?</li>
+                </ul>
+              </div>
+              <div class="impact-phase-section">
+                <h3 class="impact-phase-heading">Early Wins</h3>
+                <ol class="impact-wins-list impact-wins-list--grid">
+                  <li><span class="impact-win-num">01</span><span>First structured POC cycle run or redesigned</span></li>
+                  <li><span class="impact-win-num">02</span><span>First vertical PoV tested in market. We know if it customers respond differently than leading with features</span></li>
+                  <li><span class="impact-win-num">03</span><span>A risky deal where FE changed the trajectory</span></li>
+                  <li><span class="impact-win-num">04</span><span>Product feedback loop has a first output ICP patterns and top unmet needs by vertical delivered to PM. The loop has an owner, a cadence, and a home</span></li>
+                  <li><span class="impact-win-num">05</span><span>First career conversations complete Team feels understood and supported by their new leader</span></li>
+                  <li><span class="impact-win-num">06</span><span>3 new exceptional candidates added to pipeline from outbound sourcing</span></li>
+                </ol>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section>
+          <div class="slide-inner slide-inner--culture slide-inner--impact slide-inner--impact-phase">
+            <h2 class="culture-values-heading">Days 21&ndash;30</h2>
+            <p class="culture-values-subtext">Impact and measurement</p>
+            <hr class="culture-slide-title-rule">
+            <div class="impact-phase-sections impact-phase-sections--split">
+              <div class="impact-phase-section">
+                <h3 class="impact-phase-heading">What does meaningful impact look like? What systems, processes, and norms are now in place?</h3>
+                <div class="impact-statement-list">
+                  <p class="impact-statement-item"><span class="impact-statement-lead">The team feels like a team.</span> Clear values, high standards, and a leader who knows them and can help them get to where they want to go</p>
+                  <p class="impact-statement-item"><span class="impact-statement-lead">We deeply understand our business and how to win the vertical.</span> Our product gaps, industry PoV, and unique process based on the nuance of our industry ICP.</p>
+                  <p class="impact-statement-item"><span class="impact-statement-lead">We have a clear path to partnering with key members of the product team.</span> Systematic feedback sharing and communication cadences to ensure we&rsquo;re positioned to deliver on expectations of vertical specific needs.</p>
+                  <p class="impact-statement-item"><span class="impact-statement-lead">Sales views FE as a high performing competitive advantage in deals, not a support function.</span> We have alignment on standards, operating rhythm, communication styles, and expectations.</p>
+                  <p class="impact-statement-item"><span class="impact-statement-lead">We&rsquo;ve up-leveled how we show up in technical validation and customer engagements.</span> Documentation, rigor, and follow-through set the standard &mdash; customers reciprocate the effort and choose us over the competition because we&rsquo;re the best partner, not just the best product.</p>
+                </div>
+              </div>
+              <div class="impact-phase-section">
+                <h3 class="impact-phase-heading">How do you measure success at this stage?</h3>
+                <div class="impact-statement-list">
+                  <p class="impact-statement-item"><span class="impact-statement-lead">Acceptance of a New Business Meeting with EB attendance and structured, timebound POCs started.</span> Have we told a compelling story and showed up as credible thought partners where developers want to meaningfully engage?</p>
+                  <p class="impact-statement-item"><span class="impact-statement-lead">Cases of quantifiable pain and negative consequences documented.</span> Are we going deeper on business and contextual discovery as we&rsquo;re conducting technical discovery?</p>
+                  <p class="impact-statement-item"><span class="impact-statement-lead">FE influence on deal size and outcomes.</span> Are we telling a bigger, more differentiated story or just selling features?</p>
+                  <p class="impact-statement-item"><span class="impact-statement-lead">Candidate pipeline quality.</span> Have we increased the number of 2+ and 3 level candidates considering Cursor?</p>
+                  <p class="impact-statement-item"><span class="impact-statement-lead">Team retention and engagement.</span> Does the team feel supported and optimistic about the future?</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
       </section>
 
       <!-- 4. Part 4 -->
@@ -1402,7 +1705,7 @@
     });
 
     function fitDenseSlides() {
-      document.querySelectorAll('.slide-inner--culture, .slide-inner--competencies, .slide-inner--rhythm, .slide-inner--left').forEach(function (inner) {
+      document.querySelectorAll('.slide-inner--culture, .slide-inner--competencies, .slide-inner--rhythm, .slide-inner--left, .slide-inner--impact').forEach(function (inner) {
         inner.style.transform = '';
         var section = inner.closest('section');
         if (!section) return;
