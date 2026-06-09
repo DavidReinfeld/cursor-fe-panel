@@ -801,6 +801,72 @@
       letter-spacing: normal !important;
     }
 
+    .reveal .impact-item-title--learn {
+      border-left-color: #6B46F6 !important;
+    }
+
+    .reveal .impact-item-title--embed {
+      border-left-color: #F472B6 !important;
+    }
+
+    .reveal .impact-item-title--own {
+      border-left-color: #F59E0B !important;
+    }
+
+    .impact-key {
+      display: flex;
+      align-items: center;
+      gap: 1.75rem;
+      margin-top: 1rem;
+      padding-top: 0.85rem;
+      border-top: 1px solid #262626;
+      width: 100%;
+    }
+
+    .impact-key-title {
+      font-size: 0.7rem;
+      font-weight: 600;
+      color: #A78BFA;
+      margin: 0;
+      letter-spacing: 0.02em;
+      flex-shrink: 0;
+    }
+
+    .impact-key-items {
+      display: flex;
+      gap: 1.75rem;
+    }
+
+    .impact-key-item {
+      display: flex;
+      align-items: center;
+      gap: 0.55rem;
+      font-size: 0.75rem;
+      font-weight: 500;
+      color: #A1A1AA;
+      letter-spacing: 0.01em;
+    }
+
+    .impact-key-item::before {
+      content: '';
+      flex-shrink: 0;
+      width: 3px;
+      height: 1em;
+      border-radius: 1px;
+    }
+
+    .impact-key-item--own::before {
+      background: #F59E0B;
+    }
+
+    .impact-key-item--embed::before {
+      background: #F472B6;
+    }
+
+    .impact-key-item--learn::before {
+      background: #6B46F6;
+    }
+
     .impact-item-body {
       font-size: 0.68rem;
       font-weight: 400;
@@ -1584,20 +1650,28 @@
             <hr class="culture-slide-title-rule">
             <div class="impact-grid">
               <div class="impact-item">
-                <h3 class="impact-item-title">The Business and Deals</h3>
+                <h3 class="impact-item-title impact-item-title--embed">The Business and Deals</h3>
                 <p class="impact-item-body">Understand goals, pipeline health, where deals are stalling, coverage/capacity model, and where revenue is at risk. I&rsquo;ll find our 2&ndash;3 highest stakes deals and embed in them. Pull the top 20 accounts by PLG seat concentration and stack-rank them by expansion readiness. Own a live discovery or demo by EOW. If there are aligned sellers that need FE support without capacity, I&rsquo;m owning these engagements.</p>
               </div>
               <div class="impact-item">
-                <h3 class="impact-item-title">Hiring and Recruiting</h3>
+                <h3 class="impact-item-title impact-item-title--own">Hiring and Recruiting</h3>
                 <p class="impact-item-body">Take immediate ownership of open reqs and pipeline from Sahil. Partner with recruiting to understand process and identify any gaps to be solved. Outbound candidate PG immediately. Categorize candidate quality from 1&ndash;3 based on criteria discussed earlier.</p>
               </div>
               <div class="impact-item">
-                <h3 class="impact-item-title">Product, Personas and PoV</h3>
-                <p class="impact-item-body">Ramp by doing. Use Cursor on real tasks, watch workshops, join customer calls, talk to 2 existing customer champions, build an agent to scan existing calls to surface ICP patterns and CoM framework. Learn what customers want that we don&rsquo;t have today &mdash; by my vertical specifically. Are we selling with an industry PoV or are we selling features?</p>
+                <h3 class="impact-item-title impact-item-title--learn">Product, Personas and PoV</h3>
+                <p class="impact-item-body">Ramp by doing. Use Cursor on real tasks, watch workshops, join customer calls, talk to 2 existing customer champions, study existing materials and build an agent to scan existing calls to surface ICP patterns and CoM framework. Learn what customers want that we don&rsquo;t have today &mdash; by my vertical specifically. Are we selling with an industry PoV or are we selling features? How are FEs uncovering pain and getting devs to commit to a process? Become an AI coding and LLM landscape expert. Run a virtual workshop.</p>
               </div>
               <div class="impact-item">
-                <h3 class="impact-item-title">Team</h3>
+                <h3 class="impact-item-title impact-item-title--learn">Team</h3>
                 <p class="impact-item-body">Start with direct team, immediate peers/partners, and top 3 highest impact/tenure FEs. Learn what&rsquo;s driving success and failure in hiring and performance. For directs, share intake form, hold 1:1s, understand them as people, where they need support, what&rsquo;s slowing them down, and where I need to learn on them. Understand team norms and map the gap against the 4 key areas for success (values, competencies, op. rhythm, career growth).</p>
+              </div>
+            </div>
+            <div class="impact-key">
+              <p class="impact-key-title">Day 0 Competency</p>
+              <div class="impact-key-items">
+                <span class="impact-key-item impact-key-item--own">Own</span>
+                <span class="impact-key-item impact-key-item--embed">Embed</span>
+                <span class="impact-key-item impact-key-item--learn">Learn</span>
               </div>
             </div>
           </div>
@@ -1621,7 +1695,7 @@
                   </div>
                   <div class="impact-phase-subsection">
                     <p class="impact-phase-label">Customers&hellip;</p>
-                    <p class="impact-credibility-body">Be transparent that I won&rsquo;t be a Cursor expert yet &mdash; but show up as a thought partner by understanding their problems, having a PoV on the industry/vertical landscape and how to evaluate our technology, and sharing where we see the category heading. Ask questions that demonstrate I&rsquo;m being thoughtful about their world and pains. Customers are looking for partners to help them navigate a rapidly changing LLM quality, platform capability, and cost landscape.</p>
+                    <p class="impact-credibility-body">Be transparent that I won&rsquo;t be a Cursor expert yet, but show up as a thought partner by understanding their problems, having a PoV on the industry/vertical landscape and how to evaluate our technology, and sharing where we see the category heading. Ask questions that demonstrate I&rsquo;m being thoughtful about their world and pains. Customers are looking for partners to help them navigate a rapidly changing LLM quality, platform capability, and cost landscape.</p>
                   </div>
                 </div>
               </div>
